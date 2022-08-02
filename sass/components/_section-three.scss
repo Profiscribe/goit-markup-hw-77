@@ -1,0 +1,143 @@
+.section-three {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    background-color: var(--button-background-color);
+}
+
+.three .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+}
+
+.section-feature {
+    display: flex;
+    gap: 30px;
+}
+
+.features {
+    padding-top: 94px;
+}
+
+.features__title {
+    display: none;
+}
+
+.boxes {
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.four.countainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap-item {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-right: 64px;
+    padding-left: 64px;
+    width: 170px;
+    height: 92px;
+    &:hover {
+            border: 1px solid var(--accent-color);
+        }
+
+}
+
+
+
+
+
+
+
+
+
+.feature-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--white-color);
+}
+
+.feature-photo {
+    width: 270px;
+}
+
+.feature-list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    font-family: "Roboto";
+    font-style: normal;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.feature-text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.circle-white {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    color: var(--icon-color);
+
+    transition-property: var(--button-background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            fill: var(--white-color);
+        }
+}
+
+
+
+
+
+.picture-media {
+    fill: var(--icon-color);
+
+    transition-property: var(--button-background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            fill: var(--white-color);
+        }
+
+                .circle-white:hover & {
+                    fill: var(--white-color);
+                }
+
+                                .circle-white:focus & {
+                                    fill: var(--white-color);
+                                    background-color: var(--accent-color);
+                                }
+}
+
+

@@ -1,0 +1,53 @@
+.hero {
+  text-align: center;
+  background-color: #c4c4c4;
+}
+
+.hero__overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/heroimage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero__title {
+  font-family: "Roboto";
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero__name {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero__button {
+  color: #ffffff;
+  background-color: #2196f3;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 10px 32px;
+  border-radius: 4px;
+}
