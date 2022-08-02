@@ -327,6 +327,12 @@ img {
   overflow: auto;
 }
 
+.mob-menu.is-hidden {
+  visibility: hidden;
+  opacity: 0%;
+  pointer-events: none;
+}
+
 .authentication__item {
   gap: 10px;
 }
@@ -578,6 +584,12 @@ img {
   justify-content: space-between;
   height: 100%;
   overflow: auto;
+}
+
+.mob-menu.is-hidden {
+  visibility: hidden;
+  opacity: 0%;
+  pointer-events: none;
 }
 
 .authentication__item {
@@ -1167,6 +1179,12 @@ img {
   justify-content: space-between;
   height: 100%;
   overflow: auto;
+}
+
+.mob-menu.is-hidden {
+  visibility: hidden;
+  opacity: 0%;
+  pointer-events: none;
 }
 
 .authentication__item {

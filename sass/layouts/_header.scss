@@ -272,6 +272,13 @@
     overflow: auto;
 }
 
+.mob-menu.is-hidden {
+    visibility: hidden;
+    opacity: 0%;
+    pointer-events: none;
+}
+
+
 
 .authentication__item {
     gap: 10px;
