@@ -1,5 +1,5 @@
 .features {
-    padding-top: 94px;
+    padding-top: 60px;
 }
 
 .features__container {
@@ -15,25 +15,25 @@
     color: var(--title-text-color);
 }
 
-.description {
-    display: flex;
-    gap: 30px;
+.descrip-icon {
+    margin-left: 190px;
+    margin-top: 25px;
+    
 }
 
 .description__item {
-    width: 270px;
+    width: 450px;
+    
 }
 
 .box {
-    width: 270px;
+    width: 450px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
     margin-right: 30px;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .description__sub-title {
@@ -43,9 +43,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-
+    text-align: center;
     margin-bottom: 10px;
     margin-top: 0px;
+   
 }
 
 .description__text {
@@ -57,4 +58,8 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    margin-bottom: 30px;
+    width: 450px;
+
 }

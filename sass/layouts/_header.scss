@@ -1,6 +1,6 @@
 .header {
     border-bottom: 1px solid #eeeeee;
-    width: 100%;
+    width: 480px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -16,27 +16,16 @@
     margin-left: auto;
     margin-right: auto;
     height: 60px;
-    display: flex;
+    
     margin-top: 10px;
 
 
 
-    @media screen and (min-width:768px) {
-        height: 80px;    
-    
-    
-    }
-    
-    @media screen and (min-width:1200px) {   
-        width: 1200px;
-    
-    }
-
+   
 }
 
 .header__wrapper {
-    display: flex;
-    justify-content: space-between;
+  
     align-items: center;
 }
 
@@ -62,7 +51,7 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     height: 60px;
-    
+   
 
     @media screen and (min-width:768px) {
             height: 80px;
@@ -91,12 +80,7 @@
 .navigation__list {
   display: none;
 
-    @media screen and (min-width:768px) {
-     display: flex; 
-     gap: 50px;
-  
-    }
-    
+   
 }
 
 .navigation__item {
@@ -155,12 +139,7 @@
     display: none;
 
 
-    @media screen and (min-width:768px) {
-     display: flex;
-     align-items: center;
-     gap: 30px;
     
-    }
 
 
 }
@@ -170,6 +149,7 @@
     border: none;
     background-color: var(--white-color);
     padding-right: 0px;
+    
     @media screen and (min-width:768px) {
         display: none;
 
@@ -181,14 +161,7 @@
     display: block;
 }
 
-.mob-menu__list {}
 
-
-
-.mob-menu__item {
-   
-    
-}
 
 .mob-menu__link {
     font-weight: 500;
@@ -204,7 +177,7 @@
 
 }
 
-.mob-auth {}
+
 
 .mob-auth__item {
     margin-bottom: 32px;
@@ -233,9 +206,19 @@
     line-height: calc(28 / 24);
     letter-spacing: 0.02em;
     text-decoration: none;
-     color: #757575;
+    color: #757575;
+    margin-bottom: 64px;
 }
-.mob-icons {}
+ 
+.mob-auth-mail__link:hover {
+    color:var(--accent-color);
+}
+
+.mob-icons { 
+    display: flex;
+    gap:20px;
+    justify-content: flex-start;
+}
 
 .mob-item__link {
     font-family: 'Roboto';
@@ -246,9 +229,10 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
     text-decoration: none;
+    text-transform: capitalize;
 }
 
-.circle-white {}
+
 
 .mob-menu {
     position: fixed;
@@ -258,9 +242,11 @@
     z-index: 1;
     top: 0;
     left: 0;
-    padding-top: 48px;
+    padding-top: 10px;
     padding-bottom: 48px;
     padding-left: 40px;
+    padding-right: 15px;
+    overflow: hidden;
     
 
 }
@@ -269,7 +255,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    overflow: auto;
+    
 }
 
 .mob-menu.is-hidden {

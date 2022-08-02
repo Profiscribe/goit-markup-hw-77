@@ -124,14 +124,14 @@
                                         
                   </li>
                 </ul>
-              </div>
+            </div>
         </div>
       </div>
     </header>
 
     <main>
       <!-- ------------------------HERO------------------------------------       -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="hero__overlay">
           <div class="hero__name">
             <h1 class="hero__title">
@@ -142,18 +142,18 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- -----------------------FEATURES------------------------------------------ -->
       
-      <!-- <section class="features">
+      <section class="features">
         <div class="container features__container">
           <h2 class="features__title">Переваги</h2>
           
           <ul class="description list">
             <li class="description__item">
               <div class="box">
-                <svg width="65.32px" height="70px">
+                <svg class="descrip-icon" width="65.32px" height="70px">
                   <use href="images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -163,43 +163,45 @@
             </li>
             <li class="description__item">
               <div class="box">
-                <svg width="66.96px" height="70px">
+                <svg class="descrip-icon" width="66.96px" height="70px">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="sub-title description__sub-title">Пунктуальність</h3>
 
               <p class="text description__text">
-                Завдання організації, особливо рамки <br> і місце навчання кадрів тягне у себе
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе
               </p>
             </li>
             <li class="description__item">
               <div class="box">
-                <svg width="66.96px" height="70px">
+                <svg class="descrip-icon" width="66.96px" height="70px">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="sub-title description__sub-title">Планування</h3>
               <p class="text description__text">
-                Так само консультація з широким <br> активом значною мірою зумовлює.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="description__item">
               <div class="box">
-                <svg width="66.96px" height="70px">
+                <svg class="descrip-icon" width="66.96px" height="70px">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="sub-title description__sub-title">Современные технологии</h3>
               <p class="text description__text">
-                Значимість цих проблем настільки <br> очевидна, що реалізація планових <br>завдань.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
         </div>
-      </section> -->
-       <!-- /* ---------------------SECTION TWO------------- */ -->
-      <!-- <section class="section-two">
+      </section>
+
+        <!-- --------------section two-----------------  -->
+
+      <section class="two">
         <div class="two container">
           <h2 class="photo-title">Чим ми займаємося</h2>
 
@@ -242,20 +244,37 @@
           </ul>
         </div>
         
-      </section> -->
-      <!-- -----------------SECTION THREE------------------ -->
+      </section> 
 
-      <!-- <section class="section-three">
+
+       <!-- -----------------SECTION THREE------------------  -->
+
+        <section class="section-three">
         <div class="three container">
           <h2 class="feature-title">Наша команда</h2>
           <ul class="section-feature list">
             <li class="feature-item list">
-              <img
-                class="feature-photo"
-                src="./images/photo1.jpg"
-                alt="Product Designer"
-                width="270"
-              />
+              <picture>
+                                    <source
+                                        srcset="./images/team-one-270.jpg 1x, /images/team-one-270@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-one-354.jpg, ./images/team-one-354@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-one-450.jpg 1x, ./images/team-one-450@2x.jpg 2x"
+                                        media="(min-width: 320px)"
+                                    />
+                                    
+                                    <img
+                                        class="feature-photo"
+                                        src="./images/photo1.jpg"
+                                        alt="Product Designer"
+                                        width="270"/>
+                                </picture>
+              
               <div class="feature-box">
                 <h3 class="feature-list title">Ігорь Дем'яненко</h3>
                 <p class="feature-text">Product Designer</p>
@@ -291,13 +310,29 @@
                 </ul>
               </div>
             </li>
-            <li class="feature-item list">
-              <img
-                class="feature-photo"
-                src="images/photo2.jpg"
-                alt="Frontend Developer"
-                width="270"
-              />
+             <li class="feature-item list">
+                  <picture>
+                                    <source
+                                        srcset="./images/team-two-270.jpg 1x, /images/team-two-270@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-two-354.jpg, ./images/team-two-354@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-two-450.jpg 1x, ./images/team-two-450@2x.jpg 2x"
+                                        media="(min-width: 320px)"
+                                    />
+                                    
+                                     <img
+                                          class="feature-photo"
+                                          src="images/photo2.jpg"
+                                          alt="Frontend Developer"
+                                          width="270"
+                                        />
+                                </picture>
+             
               <div class="feature-box">
                 <h3 class="feature-list title">Ольга Репіна</h3>
                 <p class="feature-text">Frontend Developer</p>
@@ -334,12 +369,28 @@
               </div>
             </li>
             <li class="feature-item list">
-              <img
-                class="feature-photo"
-                src="images/photo3.jpg"
-                alt="Marketing"
-                width="270"
-              />
+              <picture>
+                                    <source
+                                        srcset="./images/team-three-270.jpg 1x, /images/team-three-270@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-three-354.jpg, ./images/team-three-354@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-three-450.jpg 1x, ./images/team-three-450@2x.jpg 2x"
+                                        media="(min-width: 320px)"
+                                    />
+                                    
+                                     <img
+                                        class="feature-photo"
+                                        src="images/photo3.jpg"
+                                        alt="Marketing"
+                                        width="270"
+                                      />
+                                </picture>
+              
               <div class="feature-box">
                 <h3 class="feature-list title">Микола Тарасов</h3>
                 <p class="feature-text">Marketing</p>
@@ -376,12 +427,28 @@
               </div>
             </li>
             <li class="feature-item list">
-              <img
-                class="feature-photo"
-                src="images/photo4.jpg"
-                alt="UI Designer"
-                width="270"
-              />
+              <picture>
+                                    <source
+                                        srcset="./images/team-four-270.jpg 1x, /images/team-four-270@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-four-354.jpg, ./images/team-four-354@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-four-450.jpg 1x, ./images/team-four-450@2x.jpg 2x"
+                                        media="(min-width: 320px)"
+                                    />
+                                    
+                                     <img
+                                        class="feature-photo"
+                                        src="images/photo4.jpg"
+                                        alt="UI Designer"
+                                        width="270"
+                                      />
+                                </picture>
+              
               <div class="feature-box">
                 <h3 class="feature-list title">Михайло Єрмаков</h3>
                 <p class="feature-text">UI Desigclassner</p>
@@ -393,8 +460,8 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a href="/" class="circle-white">
+                  <li> -->
+                    <!-- <a href="/" class="circle-white">
                       <svg class="picture-media" width="20px" height="20px">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -411,15 +478,15 @@
                     <a href="/" class="circle-white">
                       <svg class="picture-media" width="20px" height="20px">
                         <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
+                      </svg> -->
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
-        </div>
-      </section> -->
+        </div> -->
+      </section> 
 
       <!-- ----------------------SECTION FOUR---------------------------- -->
       <!-- <section class="section-four">

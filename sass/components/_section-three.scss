@@ -1,32 +1,29 @@
 .section-three {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: var(--button-background-color);
 }
 
 .three .container {
-    width: 1200px;
+   
     padding-left: 15px;
     padding-right: 15px;
     display: block;
 }
 
 .section-feature {
-    display: flex;
-    gap: 30px;
+   
 }
 
-.features {
-    padding-top: 94px;
-}
+
 
 .features__title {
     display: none;
 }
 
 .boxes {
-    display: flex;
-    width: 1200px;
+    
+    
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
