@@ -9,13 +9,29 @@
     z-index: 1;
 }
 
-.container {
-    display: block;
+.header-container {
+
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    height: 60px;
+    display: flex;
+    margin-top: 10px;
+
+
+
+    @media screen and (min-width:768px) {
+        height: 80px;    
+    
+    
+    }
+    
+    @media screen and (min-width:1200px) {   
+        width: 1200px;
+    
+    }
+
 }
 
 .header__wrapper {
@@ -25,18 +41,47 @@
 }
 
 .header__nav {
-    display: flex;
-    align-items: center;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+    
+    
+    }
+   
+
+
+
 }
 
 .logo {
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-right: 93px;
+    height: 60px;
+    
+
+    @media screen and (min-width:768px) {
+            height: 80px;
+    
+    
+        }
+    
+        @media screen and (min-width:1200px) {
+            font-size: 26px;
+            line-height: 1.2;
+            margin-right: 93px;
+    
+        }
+
+
+
+
+
+
 }
 
 .accert {
@@ -44,8 +89,14 @@
 }
 
 .navigation__list {
-    display: flex;
-    gap: 50px;
+  display: none;
+
+    @media screen and (min-width:768px) {
+     display: flex; 
+     gap: 50px;
+  
+    }
+    
 }
 
 .navigation__item {
@@ -101,10 +152,126 @@
 }
 
 .authentication {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    display: none;
+
+
+    @media screen and (min-width:768px) {
+     display: flex;
+     align-items: center;
+     gap: 30px;
+    
+    }
+
+
 }
+.open-btn, 
+.close-btn {
+    margin-left: auto;
+    border: none;
+    background-color: var(--white-color);
+    padding-right: 0px;
+    @media screen and (min-width:768px) {
+        display: none;
+
+    
+    }
+    
+}
+.close-btn {
+    display: block;
+}
+
+.mob-menu__list {}
+
+
+
+.mob-menu__item {
+   
+    
+}
+
+.mob-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+}
+
+.mob-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+
+}
+
+.mob-auth {}
+
+.mob-auth__item {
+    margin-bottom: 32px;
+}
+
+.mob-auth-phone__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    color: var(--accent-color);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    
+    
+}
+
+.mob-auth-mail__link {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+     color: #757575;
+}
+.mob-icons {}
+
+.mob-item__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc (22 / 18);
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.circle-white {}
+
+.mob-menu {
+    position: fixed;
+    background-color: var(--white-color);
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    
+
+}
+.mob-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: auto;
+}
+
 
 .authentication__item {
     gap: 10px;

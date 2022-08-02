@@ -14,13 +14,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
 
   <body>
     <!-- -------------------------------HEADER---------------------------- -->
     <header class="header">
-      <div class="container">
+      <div class="header-container container">
         <div class="header__wrapper">
           <nav class="header__nav nav">
             <a class="logo" href="./index.html"
@@ -57,7 +57,74 @@
                 >
               </li>
             </ul>
+            </div>
+              <button type="button" class="open-btn">
+                <svg class="open-btn__icon" width="40" height="40">
+                  <use href="./images/icon-test.svg#icon-burger"></use>
+                </svg>
+              </button>
+            </div>
+              <div>
+
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="mob-menu">
+        <div class="mob-container">
+          <div class="mob-menu-top">
+              <button type="button" class="close-btn">
+                <svg class="close-btn__icon" width="40" height="40">
+                  <use href="./images/icon-test.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav>
+            
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link">Студія</a>            
+                  
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+                </li>
+                <li class="mob-menu__item"><a href="/" class="mob-menu__link">Контакти</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-bottom"> 
+              <ul class="mob-auth list">
+                <li class="mob-auth__item">
+                  <a href="tel:+380961111111" class="mob-auth-phone__link">+38 096 111 11 11</a>               
+                  
+                </li>
+
+                <li class="mob-auth__item">
+                  <a href="mailto:info@devstudio.com" class="mob-auth-mail__link">info@devstudio.com</a>  
+                    
+                </li>
+
+              
+              </ul>
+               <ul class="mob-icons list">
+                  <li class="mob-item">
+                    <a href="/" class="mob-item__link">instagram</a>                  
+  
+                  </li>
+                  <li class="mob-item"> 
+                    <a href="/" class="mob-item__link">twitter</a>
+ 
+                  </li>
+                  <li class="mob-item">
+                    <a href="/" class="mob-item__link">facebook</a>
+  
+                  </li>
+                  <li class="mob-item">
+                    <a href="/" class="mob-item__link">linkedin</a>
+                                        
+                  </li>
+                </ul>
+              </div>
         </div>
       </div>
     </header>
@@ -79,7 +146,7 @@
 
       <!-- -----------------------FEATURES------------------------------------------ -->
       
-      <section class="features">
+      <!-- <section class="features">
         <div class="container features__container">
           <h2 class="features__title">Переваги</h2>
           
@@ -130,9 +197,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
        <!-- /* ---------------------SECTION TWO------------- */ -->
-      <section class="section-two">
+      <!-- <section class="section-two">
         <div class="two container">
           <h2 class="photo-title">Чим ми займаємося</h2>
 
@@ -175,10 +242,10 @@
           </ul>
         </div>
         
-      </section>
+      </section> -->
       <!-- -----------------SECTION THREE------------------ -->
 
-      <section class="section-three">
+      <!-- <section class="section-three">
         <div class="three container">
           <h2 class="feature-title">Наша команда</h2>
           <ul class="section-feature list">
@@ -352,10 +419,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- ----------------------SECTION FOUR---------------------------- -->
-      <section class="section-four">
+      <!-- <section class="section-four">
         <div class="four container">
           <h2 class="company-title">Постійні клієнти</h2>
           <ul class="companies list">
@@ -404,7 +471,9 @@
         </div>
       </section>
     </main>
-     <!-- /* -----------------------FOOTER------------------------- */ -->
+    
+      -------------------------------FOTER------------------------------------
+
     <footer class="footer">
       <div class="contacts">
         <div class="block-one">
@@ -482,8 +551,10 @@
           </form>
         </div>
       </div>
-    </footer>
-        <!-- ---------------MODAL--------------------------/ -->
+  
+        -------------------------------MODAL----------------------------------
+
+       
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="button-box">
@@ -555,5 +626,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-  </body>
+    <script src="./js/mob-menu.js"></script>
+  </body> 
 </html>
