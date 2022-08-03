@@ -704,7 +704,7 @@ img {
 .hero__overlay {
   max-width: 480px;
   height: 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480.jpg"), url("../images/hero-480@2x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -713,7 +713,7 @@ img {
   .hero__overlay {
     max-width: 768px;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768.jpg"), url("../images/hero-768@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -723,7 +723,7 @@ img {
   .hero__overlay {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600.jpg"), url("../images/hero-1600@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
