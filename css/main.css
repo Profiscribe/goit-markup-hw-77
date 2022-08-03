@@ -107,8 +107,13 @@ img {
   top: 0px;
   left: 0px;
   background-color: var(--white-color);
-  min-height: 60px;
+  height: 60px;
   z-index: 1;
+}
+@media screen and (width: 768px) {
+  .header {
+    height: 80px;
+  }
 }
 
 .header-container {
@@ -116,11 +121,18 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  height: 60px;
 }
 
 .header__wrapper {
   align-items: center;
+}
+@media screen and (width: 768px) {
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+  }
 }
 
 .header__nav {
@@ -131,6 +143,8 @@ img {
   .header__nav {
     display: flex;
     align-items: center;
+    padding-left: 0px;
+    padding-top: 0px;
   }
 }
 
@@ -144,13 +158,15 @@ img {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    height: 80px;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.17;
     margin-right: 93px;
   }
 }
@@ -162,9 +178,20 @@ img {
 .navigation__list {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    gap: 50px;
+  }
+}
 
 .navigation__item {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .navigation__item {
+    position: relative;
+  }
 }
 
 .navigation__link {
@@ -210,6 +237,21 @@ img {
 
 .authentication {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .authentication {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .authentication {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .open-btn,
@@ -363,8 +405,13 @@ img {
   top: 0px;
   left: 0px;
   background-color: var(--white-color);
-  min-height: 60px;
+  height: 60px;
   z-index: 1;
+}
+@media screen and (width: 768px) {
+  .header {
+    height: 80px;
+  }
 }
 
 .header-container {
@@ -372,11 +419,18 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  height: 60px;
 }
 
 .header__wrapper {
   align-items: center;
+}
+@media screen and (width: 768px) {
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+  }
 }
 
 .header__nav {
@@ -387,6 +441,8 @@ img {
   .header__nav {
     display: flex;
     align-items: center;
+    padding-left: 0px;
+    padding-top: 0px;
   }
 }
 
@@ -400,13 +456,15 @@ img {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    height: 80px;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.17;
     margin-right: 93px;
   }
 }
@@ -418,9 +476,20 @@ img {
 .navigation__list {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    gap: 50px;
+  }
+}
 
 .navigation__item {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .navigation__item {
+    position: relative;
+  }
 }
 
 .navigation__link {
@@ -466,6 +535,21 @@ img {
 
 .authentication {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .authentication {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .authentication {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .open-btn,
@@ -620,10 +704,30 @@ img {
 .hero__overlay {
   max-width: 480px;
   height: 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480.jpg"), url("../images/hero-480@2x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (width: 768px) {
+  .hero__overlay {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768.jpg"), url("../images/hero-768@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (width: 1200px) {
+  .hero__overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600.jpg"), url("../images/hero-1600@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .hero__title {
@@ -945,8 +1049,13 @@ img {
   top: 0px;
   left: 0px;
   background-color: var(--white-color);
-  min-height: 60px;
+  height: 60px;
   z-index: 1;
+}
+@media screen and (width: 768px) {
+  .header {
+    height: 80px;
+  }
 }
 
 .header-container {
@@ -954,11 +1063,18 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  height: 60px;
 }
 
 .header__wrapper {
   align-items: center;
+}
+@media screen and (width: 768px) {
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+  }
 }
 
 .header__nav {
@@ -969,6 +1085,8 @@ img {
   .header__nav {
     display: flex;
     align-items: center;
+    padding-left: 0px;
+    padding-top: 0px;
   }
 }
 
@@ -982,13 +1100,15 @@ img {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    height: 80px;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.17;
     margin-right: 93px;
   }
 }
@@ -1000,9 +1120,20 @@ img {
 .navigation__list {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    gap: 50px;
+  }
+}
 
 .navigation__item {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .navigation__item {
+    position: relative;
+  }
 }
 
 .navigation__link {
@@ -1048,6 +1179,21 @@ img {
 
 .authentication {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .authentication {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .authentication {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .open-btn,

@@ -5,8 +5,14 @@
     top: 0px;
     left: 0px;
     background-color: var(--white-color);
-    min-height: 60px;
+    height: 60px;
     z-index: 1;
+    
+    @media screen and (width:768px) {
+        height: 80px;
+    }
+    
+    
 }
 
 .header-container {
@@ -15,7 +21,7 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    height: 60px;
+    
     
     
 
@@ -27,6 +33,13 @@
 .header__wrapper {
   
     align-items: center;
+
+    @media screen and (width:768px) {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-between;
+    }
 }
 
 .header__nav {
@@ -37,7 +50,8 @@
     @media screen and (min-width:768px) {
         display: flex;
         align-items: center;
-    
+        padding-left: 0px;
+        padding-top: 0px;
     
     }
    
@@ -57,17 +71,21 @@
    
 
     @media screen and (min-width:768px) {
-            height: 80px;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-right: 87px;
     
     
-        }
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 26px;
+        line-height: 1.17;
+        margin-right: 93px;
     
-        @media screen and (min-width:1200px) {
-            font-size: 26px;
-            line-height: 1.2;
-            margin-right: 93px;
     
-        }
+    }
+     
 
 
 
@@ -82,13 +100,30 @@
 
 .navigation__list {
   display: none;
+  
+  @media screen and (min-width:768px) {
+        display: flex;
+        gap: 50px;
+
+
+    }
+
 
    
 }
 
 .navigation__item {
     position: relative;
+
+    @media screen and (min-width:768px) {
+        position: relative;
+    }
+        
+
+
 }
+
+
 
 .navigation__link {
     color: var(--title-text-color);
@@ -108,6 +143,8 @@
     &:focus {
          color: var(--accent-color);
     }
+    
+  
 
 }
 
@@ -143,9 +180,25 @@
 
 .authentication {
     display: none;
+    @media screen and (min-width:768px) {
+    
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width:1200px) {
+            
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
 
  
 
+    
 
 }
 .open-btn, 

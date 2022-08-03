@@ -186,12 +186,28 @@
             <li class="portfolio-item">
               <a href="/" class="works">
                 <div class="cover">
-                  <img
-                    src="./images/imgsport.jpg"
-                    class="photo-works"
-                    alt="sport"
-                    width="370"
-                  />
+                  <picture>
+                                    <source
+                                        srcset="./images/team-two-270.jpg 1x, /images/team-two-270@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-two-354.jpg, ./images/team-two-354@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./images/team-two-450.jpg 1x, ./images/team-two-450@2x.jpg 2x"
+                                        media="(min-width: 320px)"
+                                    />
+                                    <img src="./images/img2.jpg" alt="foto Olga" width="270" />
+                                      <img
+                                          src="./images/imgsport.jpg"
+                                          class="photo-works"
+                                          alt="sport"
+                                          width="370"
+                                        />
+                                </picture>
+                
                   <p class="cover-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
