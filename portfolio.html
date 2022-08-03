@@ -13,15 +13,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
-    
+    <link rel="stylesheet" href="./css/main.min.css" />
     
   </head>
 
   <body>
     <!-- -------------------------------HEADER---------------------------- -->
     <header class="header">
-      <div class="container">
+      <div class="header-container container">
         <div class="header__wrapper">
           <nav class="header__nav nav">
             <a class="logo" href="./index.html"
@@ -58,7 +57,74 @@
                 >
               </li>
             </ul>
+            </div>
+              <button type="button" class="open-btn">
+                <svg class="open-btn__icon" width="40" height="40">
+                  <use href="./images/icon-test.svg#icon-burger"></use>
+                </svg>
+              </button>
+            </div>
+              <div>
+
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="mob-menu">
+        <div class="mob-container">
+          <div class="mob-menu-top">
+              <button type="button" class="close-btn">
+                <svg class="close-btn__icon" width="40" height="40">
+                  <use href="./images/icon-test.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav>
+            
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link">Студія</a>            
+                  
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+                </li>
+                <li class="mob-menu__item"><a href="/" class="mob-menu__link">Контакти</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-bottom"> 
+              <ul class="mob-auth list">
+                <li class="mob-auth__item">
+                  <a href="tel:+380961111111" class="mob-auth-phone__link">+38 096 111 11 11</a>               
+                  
+                </li>
+
+                <li class="mob-auth__item">
+                  <a href="mailto:info@devstudio.com" class="mob-auth-mail__link">info@devstudio.com</a>  
+                    
+                </li>
+
+              
+              </ul>
+               <ul class="mob-icons list">
+                  <li class="mob-item">
+                    <a href="/" class="mob-item__link">instagram</a>                  
+  
+                  </li>
+                  <li class="mob-item"> 
+                    <a href="/" class="mob-item__link">twitter</a>
+ 
+                  </li>
+                  <li class="mob-item">
+                    <a href="/" class="mob-item__link">facebook</a>
+  
+                  </li>
+                  <li class="mob-item">
+                    <a href="/" class="mob-item__link">linkedin</a>
+                                        
+                  </li>
+                </ul>
+            </div>
         </div>
       </div>
     </header>
@@ -297,85 +363,86 @@
           </ul>
         </div>
       </section>
-    </main>
+    
+         <footer class="footer">
+          <div class="contacts">
+            <div class="block-one">
+              <a class="footer-logo" href="./index.html"
+                ><span class="accert">Web</span>Studio</a
+              >
 
-    <footer class="footer">
-      <div class="contacts">
-        <div class="block-one">
-          <a class="footer-logo" href="./index.html"
-            ><span class="accert">Web</span>Studio</a
-          >
+              <address class="space">
+                <ul class="adrs list">
+                  <li class="contact">
+                    <a
+                      href="https://goo.gl/maps/G5h7r23HQDHLUZFr6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer-address"
+                      >г. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="contact-item">
+                    <a href="mailto:info@devstudio.com" class="footer-link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="contact-item">
+                    <a href="tel:+380961111111" class="footer-link"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="block-two">
+              <p class="action">приєднуйтеся</p>
 
-          <address>
-            <ul class="list">
-              <li class="contact">
-                <a
-                  href="https://goo.gl/maps/G5h7r23HQDHLUZFr6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="footer-address"
-                  >г. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="contact-item">
-                <a href="mailto:info@devstudio.com" class="footer-link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contact-item">
-                <a href="tel:+380961111111" class="footer-link"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="block-two">
-          <p class="action">приєднуйтеся</p>
-
-          <ul class="icons list">
-            <li class="icons-item">
-              <a href="/" class="circle">
-                <svg class="picture" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/" class="circle">
-                <svg class="picture" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/" class="circle">
-                <svg class="picture" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="/" class="circle">
-                <svg class="picture" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="block-three">
-          <p class="action">Підпишіться на розсилку</p>
-          <form class="signup" name="signup-form" autocomplete="on" novalidate>
-            <input type="email" name="email" id="email" placeholder="Email" />
-            <button class="signup-button" type="submit">
-              Підписатися<svg class="signup-icon" width="24" height="24">
-                <use href="./images/icon-test.svg#icon-plane"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </footer>
+              <ul class="icons list">
+                <li class="icons-item">
+                  <a href="/" class="circle">
+                    <svg class="picture" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="circle">
+                    <svg class="picture" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="circle">
+                    <svg class="picture" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="circle">
+                    <svg class="picture" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="block-three">
+              <p class="action">Підпишіться на розсилку</p>
+              <form class="signup" name="signup-form" autocomplete="on" novalidate>
+                <input type="email" name="email" id="email" placeholder="Email" />
+                <button class="signup-button" type="submit">
+                  Підписатися<svg class="signup-icon" width="24" height="24">
+                    <use href="./images/icon-test.svg#icon-plane"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </footer>
+    </main> 
+    <script src="./js/menu.js"></script>
   </body>
 </html>
