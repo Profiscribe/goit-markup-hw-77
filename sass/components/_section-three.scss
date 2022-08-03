@@ -11,9 +11,6 @@
     display: block;
 }
 
-.section-feature {
-   
-}
 
 
 
@@ -27,13 +24,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-}
-
-.four.countainer {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .wrap-item {
@@ -53,7 +43,9 @@
 
 
 
-
+.feature-box:not(:last-child) {
+    margin-bottom: 30px;
+}
 
 
 
@@ -66,7 +58,7 @@
 }
 
 .feature-photo {
-    width: 270px;
+    width: 450px;
 }
 
 .feature-list {

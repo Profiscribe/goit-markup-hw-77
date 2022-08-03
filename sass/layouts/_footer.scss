@@ -3,33 +3,37 @@ footer {
     background-color: var(--additional-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 480px;
+    height: 603px;
 }
 
 .contacts {
-    display: flex;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    
     align-items: baseline;
     justify-content: center;
 }
 
-.block-one {
-    margin-right: 70px;
-}
+
 
 .footer-logo {
     color: var(--button-background-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.71;
+    font-size: 24px;
+    line-height: calc(28.18/24);
     text-decoration: none;
     letter-spacing: 0.03em;
+    text-align: center;
+    margin-left: 163px;
+    
 }
 
 .space {
-    margin-top: 20px;
+    
+    margin-bottom: 60px;
 }
 
 .footer-address {
@@ -49,6 +53,10 @@ footer {
         }
 }
 
+.contact {
+    margin-top: 20px;
+}
+
 
 
 
@@ -64,7 +72,7 @@ footer {
     line-height: 1.71;
     font-style: normal;
     letter-spacing: 0.03em;
-    margin-top: 9px;
+    margin-top: 8px;
 
     transition-duration: 250ms;
     transition-property: var(--white-color);
@@ -75,9 +83,7 @@ footer {
         }
 }
 
-.block-two {
-    margin-right: 93px;
-}
+
 
 .action {
     margin-bottom: 20px;
@@ -96,6 +102,7 @@ footer {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 .circle {
@@ -124,7 +131,7 @@ footer {
 }
 
 .block-three {
-    width: 570px;
+    
 }
 
 .signup-button {
@@ -169,22 +176,33 @@ footer {
 
 .signup {
     display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    
     &:hover {
             display: flex;
         }
-            &input {
-                width: 358px;
-                padding-top: 15px;
-                padding-left: 16px;
-                padding-bottom: 16px;
-                border: 1px solid rgba(255, 255, 255, 0.3);
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-                border-radius: 4px;
-                background-color: var(--additional-background-color);
-                color: var(--white-color);
-                }
+            
     
 }
+.signup input {
+    width: 450px;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--additional-background-color);
+    color: var(--white-color);
 
 
+}
+.adrs {
+    text-align: center;
+}
+.action {
+    text-align: center;
+}
 

@@ -1,16 +1,24 @@
 .section-four {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    // @media screen and (min-width:320px) {
+    //         width: calc((100%-30px)/2);
+    //     }
+    
+    //     @media screen and (min-width:320px) {
+    //         width: calc((100%-60px)/3);
+    //     }
+    
+    //     @media screen and (min-width:1200px) {
+    //         width: calc((100%-150px)/6);
+    //     }
 }
 
-.companies {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
+
 
 .company-link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--icon-color);
     display: flex;
@@ -42,3 +50,32 @@
             color: var(--accent-color);
         }
 }
+
+.four.countainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.companies {
+    // @media screen and (min-width:320px) {
+    //     width: calc((100%-30px)/2);
+    // }
+         
+    // @media screen and (min-width:320px) {
+    //     width: calc((100%-60px)/3);
+    // }
+    // @media screen and (min-width:1200px) {
+    //  width: calc((100%-150px)/6);
+    // }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+
+
+   
