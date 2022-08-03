@@ -816,6 +816,9 @@ img {
   margin-top: 0px;
   letter-spacing: 0.03em;
   text-align: center;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-text {
@@ -863,6 +866,12 @@ img {
 .circle-white:focus .picture-media {
   fill: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.section-feature {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .section-four {
@@ -1159,6 +1168,7 @@ img {
 
 .backdrop {
   position: fixed;
+  width: 480px;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -1180,12 +1190,12 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 20%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubik);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1276,10 +1286,10 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.74;
   letter-spacing: 0.03em;
   color: #2196f3;
+  font-size: 12px;
+  line-height: 1.1666666667;
 }
 
 .label-check-box {
@@ -1304,8 +1314,8 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1316,9 +1326,9 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  width: 448px;
   height: 120px;
   font-style: 12px;
+  width: 370px;
   transition-property: var(--button-background-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1494,7 +1504,6 @@ footer {
   gap: 10px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .circle {
@@ -1584,6 +1593,7 @@ footer {
 
 .action {
   text-align: center;
+  margin-top: 60px;
 }
 
 .photo-works {

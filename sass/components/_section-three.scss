@@ -71,6 +71,10 @@
     margin-top: 0px;
     letter-spacing: 0.03em;
     text-align: center;
+
+        gap: 30px;
+            display: flex;
+            flex-direction: column;
 }
 
 .feature-text {
@@ -130,3 +134,8 @@
 }
 
 
+.section-feature {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+}
